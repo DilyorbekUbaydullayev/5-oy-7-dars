@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    body{
+        background-color: #0D0714;
+    }
+    .container{
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    #task{
+        width: 400px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #9E78CF;
+        background-color: #171425;
+        color: #fff;
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    #btn{
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: #9E78CF;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    #p{
+        margin-top: 20px;
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+    }
+    #wrapper{
+        margin: 0 auto;
+        width: 500px;
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #9E78CF;
+        background-color: #171425;
+        color: #fff;
+        margin-top: 20px;
+        overflow-y: auto;
+        max-height: 300px;
+    }
+    .div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <form id="form">
+            <input type="text" id="task" placeholder="Add Task">
+            <button id="btn">Add Task</button>
+        </form>
+    </div>
+    <p id="p"></p>
+    <div id="wrapper">
+        
+    </div>
+    <script type="module" src="./app.js"></script>
+</body>
+</html>
